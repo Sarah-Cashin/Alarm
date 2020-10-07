@@ -1,48 +1,14 @@
 <html>
 
 <head>
-
+    <br>
     <title>ALARM CLOCK</title>
 
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="body.css">
 
 
-    <style>
-        body {
-            background-color: white;
-        }
-        
-        #clock {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: black;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            letter-spacing: 7px;
-            font-weight: bold;
-            font-size: 2em;
-        }
-        
-        .alarm__time {
-            position: absolute;
-            top: 60%;
-            right: 44%;
-            font-size: 1em;
-            width: 11em;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-        
-        .setAlarm {
-            position: absolute;
-            top: 70%;
-            right: 45%;
-            font-size: 1em;
-            width: 4cm;
-        }
-    </style>
 </head>
 
 <body onload="startTime()">
@@ -52,26 +18,24 @@
     <div class="page">
 
         <header>
-            <h1 style=" color: black; text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> <strong> Alarm Clock</strong></h1>
+            <h1><strong> Alarm Clock</strong></h1>
         </header>
-
+        <br>
         <img id="clockimage" src="black-ring-bell-alarm-clock-682422.jpg" alt="clock">
-        <style>
-            img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: auto;
-                height: auto;
-            }
-        </style>
-
+        <br>
         <br>
         <br>
 
-        <button onclick="setTimeOut(setAlarm, 3000);" class="setAlarm " id="setAlarm">Set Alarm</button>
+        <!-- NOTE - when button is clicked background changes but not related to alarm time -->
+        <!-- <button onclick="changeBackground()" class="setAlarm" id="setAlarm">Set Alarm</button> -->
 
-        <input id="alarmtime" type="time" class="alarm__time" placeholder="Alarmtime" step="1">
+
+        <button class="setAlarm" id="setAlarm">Set Alarm</button>
+
+
+        <!-- NOTE: when using oninput background changes but not for a specific time need to link with specific time -->
+        <input oninput="changeBackground()" id="alarmtime" type="time" class="alarm__time" min="09:00" max="00:00" required>
+
 
     </div>
 
