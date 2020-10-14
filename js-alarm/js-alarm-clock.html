@@ -10,9 +10,13 @@
 </head>
 
 <body>
+    <br>
+    <img id="clockimage" src="black-ring-bell-alarm-clock-682422.jpg" alt="clock">
+    <br>
+
     <!-- (A) CURRENT TIME -->
     <div id="ctime">
-        <h1 class="header">THE CURRENT TIME</h1>
+        <h1 class="header"> Current time</h1>
         <div class="square">
             <div class="digits" id="chr">00</div>
             <div class="text">HR</div>
@@ -29,12 +33,12 @@
 
     <!-- (B) SET ALARM -->
     <div id="tpick">
-        <h1 class="header">SET ALARM</h1>
+        <h1 class="header">Set Alarm</h1>
         <div id="tpick-h"></div>
         <div id="tpick-m"></div>
         <div id="tpick-s"></div>
         <div>
-            <input type="button" value="Set" id="tset" />
+            <input type="button" value="Set" id="tset">
             <input type="button" value="Reset" id="treset" disabled/>
         </div>
     </div>
@@ -43,6 +47,8 @@
     <audio id="alarm-sound" loop>
       <source src="wake-up-sound.mp3" type="audio/mp3">
     </audio>
+
+
 </body>
 
 </html>
