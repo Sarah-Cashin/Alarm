@@ -16,14 +16,11 @@ body {
 /* [FONT] */
 
 #ctime,
-#tpick,
-#ctime2,
-#tpick2 {
+#tpick {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.header,
-.header2 {
+.header {
     text-align: center;
     font-weight: normal;
     margin: 5px 0 10px 0;
@@ -32,8 +29,7 @@ body {
 
 /* [CURRENT TIME] */
 
-#ctime,
-#ctime2 {
+#ctime {
     margin: 0 auto;
     max-width: 350px;
     padding: 10px;
@@ -41,20 +37,17 @@ body {
     text-align: center;
 }
 
-#ctime .header,
-#ctime2 .header2 {
+#ctime .header {
     color: black;
 }
 
-#ctime .square,
-#ctime2 .square2 {
+#ctime .square {
     display: inline-block;
     padding: 10px;
     margin: 5px;
 }
 
-#ctime .digits,
-#ctime2.digits2 {
+#ctime .digits {
     font-size: 24px;
     background: #fff;
     color: #000;
@@ -62,8 +55,7 @@ body {
     border-radius: 5px;
 }
 
-#ctime .text,
-#ctime2.text2 {
+#ctime .text {
     margin-top: 10px;
     color: black;
 }
@@ -71,8 +63,7 @@ body {
 
 /* [TIME PICKER] */
 
-#tpick,
-#tpick2 {
+#tpick {
     margin: 0 auto;
     max-width: 350px;
     padding: 10px;
@@ -82,16 +73,12 @@ body {
 
 #tpick-h,
 #tpick-m,
-#tpick-s,
-#tpick-h2,
-#tpick-m2,
-#tpick-s2 {
+#tpick-s {
     display: inline-block;
     width: 32%;
 }
 
-#tpick select,
-#tpick2 select {
+#tpick select {
     box-sizing: padding-box;
     width: 100%;
     font-size: 1.2em;
@@ -100,9 +87,7 @@ body {
 }
 
 #tset,
-#treset,
-#tset2,
-#treset2 {
+#treset {
     box-sizing: padding-box;
     width: 50%;
     background: #3368b2;
@@ -113,9 +98,7 @@ body {
 }
 
 #tset:disabled,
-#treset:disabled,
-#tset2:disabled,
-#treset2:disabled {
+#treset:disabled {
     background: #aaa;
     color: #888;
 }
