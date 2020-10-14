@@ -21,7 +21,7 @@ var ac = {
         ac.treset.addEventListener("click", ac.reset);
 
         // The alarm sound
-        ac.sound = document.getElementById("alarm-sound");
+        ac.sound = document.getElementById("alarm-sound2");
 
         // Start the clock
         ac.alarm = null;
