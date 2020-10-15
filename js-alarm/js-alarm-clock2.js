@@ -1,3 +1,6 @@
+//TIME PICKER NOT CURRENTLY SHOWING ON SECOND CLOCK IN ORDER TO SET ALARM
+// CLOCK IS NOT COUNTING DOWN
+
 var ac = {
     init: function() {
         // ac.init() : start the alarm clock
