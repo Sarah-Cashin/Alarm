@@ -11,16 +11,16 @@ var ac = {
 
         // The time picker - Hr, Min, Sec
         ac.thr = ac.createSel(23);
-        document.getElementById("tpick-h").appendChild(ac.thr);
+        document.getElementById("tpick-h2").appendChild(ac.thr);
         ac.thm = ac.createSel(59);
-        document.getElementById("tpick-m").appendChild(ac.thm);
+        document.getElementById("tpick-m2").appendChild(ac.thm);
         ac.ths = ac.createSel(59);
-        document.getElementById("tpick-s").appendChild(ac.ths);
+        document.getElementById("tpick-s2").appendChild(ac.ths);
 
         // The time picker - Set, reset
-        ac.tset = document.getElementById("tset");
+        ac.tset = document.getElementById("tset2");
         ac.tset.addEventListener("click", ac.set);
-        ac.treset = document.getElementById("treset");
+        ac.treset = document.getElementById("treset2");
         ac.treset.addEventListener("click", ac.reset);
 
         // The alarm sound
