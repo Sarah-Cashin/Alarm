@@ -19,13 +19,9 @@ function checkTime(i) {
 }
 
 //Alarm
-// function changeBackground() {
-//     let alarm = document.getElementById("alarmtime").alarm__time;
-//     document.body.style.backgroundColor = "yellow";
-// }
 
 document.querySelector(".setAlarm").addEventListener("click", function() {
-    if (oninput === startTime) {
+    if (alarm__time === startTime) {
         document.body.backgroundColor = "blue";
     }
 });
